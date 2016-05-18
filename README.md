@@ -1,6 +1,6 @@
-# seed-element
+# tpa-seed
 
-An element providing a starting point for your own reusable Polymer elements.
+An element providing a starting point for your own reusable TPA elements.
 
 
 ## Dependencies
@@ -25,7 +25,7 @@ linting specificities. You can install it via:
 
 And you can run it via:
 
-	polylint -i seed-element.html
+	polylint -i tpa-seed-element.html
 
 If your element contains errors, they will appear on the console.
 
@@ -48,13 +48,13 @@ And you can run it via:
     polyserve
 
 Once running, you can preview your element at
-`http://localhost:8080/components/seed-element/`, where `seed-element` is the name of the directory containing it.
+`http://localhost:8080/components/tpa-seed-element/`, where `tpa-seed-element` is the name of the directory containing it.
 
 
 ## Testing Your Element
 
 Simply navigate to the `/test` directory of your element to run its tests. If
-you are using Polyserve: `http://localhost:8080/components/seed-element/test/`
+you are using Polyserve: `http://localhost:8080/components/tpa-seed-element/test/`
 
 ### web-component-tester
 
@@ -78,4 +78,4 @@ Then, you can run your tests on _all_ of your local browsers via:
 
 ## Yeoman support
 
-If you'd like to use Yeoman to scaffold your element that's possible. The official [`generator-polymer`](https://github.com/yeoman/generator-polymer) generator has a [`seed`](https://github.com/yeoman/generator-polymer#seed) subgenerator.
+If you'd like to use Yeoman to scaffold your element that's possible. The TPA [`generator-polymer`](https://github.com/ING-Group/generator-tpa) generator has a [`tpa`](https://github.com/ING-Group/generator-tpa#tpa) subgenerator.

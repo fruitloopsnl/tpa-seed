@@ -1,5 +1,5 @@
 {
-  "name": "seed-element",
+  "name": "tpa-seed-element",
   "version": "1.0.7",
   "authors": [
     "Anonymous <anonymous@example.com>"
@@ -10,15 +10,15 @@
     "polymer",
     "seed"
   ],
-  "main": "seed-element.html",
+  "main": "tpa-seed-element.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/<USERNAME>/tpa-seed-element/",
   "ignore": [
     "/.*",
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.2.0"
+    "polymer": "Polymer/polymer#^1.4.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
