@@ -1,0 +1,33 @@
+{
+  "name": "tpa-seed-element",
+  "version": "0.0.0",
+  "description": "An element providing a starting point for your own reusable TPA elements.",
+  "main": "wct.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {    
+  },
+  "devDependencies": {
+    "drakov": "^1.0.0",
+    "gulp": "^3.9.1",
+    "web-component-tester-istanbul": "^0.10.0"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ING-Group/tpa-seed.git"
+  },
+  "keywords": [
+    "tpa",
+    "polymer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ING-Group/tpa-seed/issues"
+  },
+  "homepage": "https://github.com/ING-Group/tpa-seed#readme"
+}
