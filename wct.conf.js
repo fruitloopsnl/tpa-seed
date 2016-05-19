@@ -2,7 +2,7 @@ module.exports = {
     verbose: true,
     "plugins": {
         "local": {
-            "browsers": ['chrome', 'firefox', 'ie']
+            "browsers": ['chrome', 'firefox']
         },
         "istanbul": {
             "dir": "./coverage",
