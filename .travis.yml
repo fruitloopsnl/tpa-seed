@@ -1,7 +1,7 @@
 language: node_js
 sudo: required
 before_script:
-  - npm install -g bower polylint web-component-tester
+  - npm install -g bower polylint web-component-tester web-component-tester-istanbul
   - bower install
   - polylint
 env:
