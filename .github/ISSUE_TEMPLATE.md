@@ -1,4 +1,4 @@
-<!-- Instructions: https://github.com/ING-Group/tpa-seed/CONTRIBUTING.md#filing-issues -->
+<!-- Instructions: https://github.com/ING-Group/tpa-component/CONTRIBUTING.md#filing-issues -->
 ### Description
 <!-- Example: The `paper-foo` element causes the page to turn pink when clicked. -->
 
