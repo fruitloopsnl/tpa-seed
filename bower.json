@@ -12,13 +12,15 @@
   ],
   "main": "tpa-component.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/tpa-component/",
+  "homepage": "https://github.com/ING-Group/tpa-component/",
   "ignore": [
     "/.*",
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0"
+    "polymer": "Polymer/polymer#^1.4.0",
+    "tpa-icons": "ING-Group/tpa-icons",
+    "tpa-styles": "ING-Group/tpa-styles"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
