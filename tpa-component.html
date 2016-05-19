@@ -15,19 +15,19 @@ An element providing a solution to no problem in particular.
 
 Example:
 
-    <tpa-seed-element></tpa-seed-element>
+    <tpa-component></tpa-component>
 
 Example:
 
-    <tpa-seed-element>
-      <h2>Hello tpa-seed-element</h2>
-    </tpa-seed-element>
+    <tpa-component>
+      <h2>Hello tpa-component</h2>
+    </tpa-component>
 
 @demo demo/index.html
 @hero hero.svg
 -->
 
-<dom-module id="tpa-seed-element">
+<dom-module id="tpa-component">
   <template>
     <style>
       :host {
@@ -44,7 +44,7 @@ Example:
       }
     </style>
 
-    <h1>&lt;tpa-seed-element&gt;</h1>
+    <h1>&lt;tpa-component&gt;</h1>
     <content></content>
     <p class="author">
       <img src$="{{author.image}}">
@@ -55,7 +55,7 @@ Example:
 
   <script>
     Polymer({
-      is: 'tpa-seed-element',
+      is: 'tpa-component',
 
       properties: {
         /**
@@ -127,13 +127,13 @@ Example:
        */
       sayHello: function(greeting) {
         var response = greeting || 'Hello World!';
-        return 'tpa-seed-element says, ' + response;
+        return 'tpa-component says, ' + response;
       },
 
       /**
-       * The `tpa-seed-element-lasers` event is fired whenever `fireLasers` is called.
+       * The `tpa-component-lasers` event is fired whenever `fireLasers` is called.
        *
-       * @event tpa-seed-element-lasers
+       * @event tpa-component-lasers
        * @detail {{sound: String}}
        */
 
@@ -144,7 +144,7 @@ Example:
        * do the zapping.
        */
       fireLasers: function() {
-        this.fire('tpa-seed-element-lasers', {sound: 'Pew pew!'});
+        this.fire('tpa-component-lasers', {sound: 'Pew pew!'});
       }
     });
   </script>
