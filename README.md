@@ -1,4 +1,4 @@
-# tpa-seed
+# tpa-component
 
 An element providing a starting point for your own reusable TPA elements.
 
@@ -25,7 +25,7 @@ linting specificities. You can install it via:
 
 And you can run it via:
 
-	polylint -i tpa-seed-element.html
+	polylint -i tpa-component.html
 
 If your element contains errors, they will appear on the console.
 
@@ -48,13 +48,13 @@ And you can run it via:
     polyserve
 
 Once running, you can preview your element at
-`http://localhost:8080/components/tpa-seed-element/`, where `tpa-seed-element` is the name of the directory containing it.
+`http://localhost:8080/components/tpa-component/`, where `tpa-component` is the name of the directory containing it.
 
 
 ## Testing Your Element
 
 Simply navigate to the `/test` directory of your element to run its tests. If
-you are using Polyserve: `http://localhost:8080/components/tpa-seed-element/test/`
+you are using Polyserve: `http://localhost:8080/components/tpa-component/test/`
 
 ### web-component-tester
 
