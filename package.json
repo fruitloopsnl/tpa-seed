@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ING-Group/tpa-seed.git"
+    "url": "git+https://github.com/ING-Group/tpa-component.git"
   },
   "keywords": [
     "tpa",
@@ -27,7 +27,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ING-Group/tpa-seed/issues"
+    "url": "https://github.com/ING-Group/tpa-component/issues"
   },
-  "homepage": "https://github.com/ING-Group/tpa-seed#readme"
+  "homepage": "https://github.com/ING-Group/tpa-component#readme"
 }
