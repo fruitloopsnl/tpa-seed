@@ -10,6 +10,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../polymer/polymer.html">
 
+<link rel="import" href="tpa-component-i18n.html">
+
 <!--
 An element providing a solution to no problem in particular.
 
@@ -29,6 +31,10 @@ Example:
 
 <dom-module id="tpa-component">
   <template>
+    <tpa-component-i18n
+      id="i18ncontent"
+      content="{{i18ncontent}}"></tpa-component-i18n>
+
     <style>
       :host {
         display: block;
@@ -48,7 +54,7 @@ Example:
     <content></content>
     <p class="author">
       <img src$="{{author.image}}">
-      Cheers,<br/>
+      {{i18ncontent.cheers}},<br/>
       <span class="name">{{author.name}}</span>
     </p>
   </template>
@@ -58,6 +64,12 @@ Example:
       is: 'tpa-component',
 
       properties: {
+
+        i18ncontent: {
+          type: Object,
+          notify: true
+        },
+
         /**
          * `fancy` indicates that the element should don a monocle and tophat,
          * while checking its pocket watch.
@@ -81,9 +93,9 @@ Example:
           // We do that to ensure that each element gets its own copy of the
           // value, rather than having it shared across all instances (via the
           // prototype).
-          value: function() {
+          value: function () {
             return {
-              name:  'Dimitri Glazkov',
+              name: 'Dimitri Glazkov',
               image: 'http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg',
             };
           }
@@ -92,7 +104,7 @@ Example:
 
       // Element Lifecycle
 
-      ready: function() {
+      ready: function () {
         // `ready` is called after all elements have been configured, but
         // propagates bottom-up. This element's children are ready, but parents
         // are not.
@@ -101,7 +113,7 @@ Example:
         // necessary), or kick off any processes the element wants to perform.
       },
 
-      attached: function() {
+      attached: function () {
         // `attached` fires once the element and its parents have been inserted
         // into a document.
         //
@@ -110,7 +122,7 @@ Example:
         // loading resources, etc).
       },
 
-      detached: function() {
+      detached: function () {
         // The analog to `attached`, `detached` fires when the element has been
         // removed from a document.
         //
@@ -125,7 +137,7 @@ Example:
        * @param {string} greeting A positive greeting.
        * @return {string} The full greeting.
        */
-      sayHello: function(greeting) {
+      sayHello: function (greeting) {
         var response = greeting || 'Hello World!';
         return 'tpa-component says, ' + response;
       },
@@ -143,7 +155,7 @@ Example:
        * Or, at least, dispatch an event in the vain hope that someone else will
        * do the zapping.
        */
-      fireLasers: function() {
+      fireLasers: function () {
         this.fire('tpa-component-lasers', {sound: 'Pew pew!'});
       }
     });
