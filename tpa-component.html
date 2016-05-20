@@ -157,6 +157,19 @@ Example:
        */
       fireLasers: function () {
         this.fire('tpa-component-lasers', {sound: 'Pew pew!'});
+      },
+
+      /**
+       * Change the language of the component
+       *
+       * @param {string} greeting A positive greeting.
+       * @return {string} The full greeting.
+       */
+      changeLanguage: function(a){
+        this.fire('iron-signal', {
+          name: "i18n",
+          data: a
+        });
       }
     });
   </script>
