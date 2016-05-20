@@ -1,6 +1,6 @@
 {
   "name": "tpa-component",
-  "version": "1.0.7",
+  "version": "1.0.0",
   "authors": [
     "Anonymous <anonymous@example.com>"
   ],
@@ -20,7 +20,9 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
     "tpa-icons": "ING-Group/tpa-icons",
-    "tpa-styles": "ING-Group/tpa-styles"
+    "tpa-styles": "ING-Group/tpa-styles",
+    "tpa-i18n": "ING-group/tpa-i18n",
+    "iron-signals": "PolymerElements/iron-signals#^1.0.3"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

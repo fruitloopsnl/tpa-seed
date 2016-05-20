@@ -13,10 +13,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <title>tpa-component Demo</title>
+
     <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+
     <link rel="import" href="../tpa-component.html">
-    <link rel="import" href="../../tpa-icons/tpa-icons.html">   
-    <link rel="import" href="../../tpa-styles/app-theme.html"> 
+    <link rel="import" href="../../tpa-icons/tpa-icons.html">
+    <link rel="import" href="../../tpa-styles/app-theme.html">
   </head>
   <body unresolved>
 
@@ -24,6 +26,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <p>Make words! <button id="saybtn">Say Something</button></p>
     <p>Make lasers! <button id="laserbtn">Fire lasers</button></p>
+    <p>
+      Change the language
+      <button id="dutchbtn">Dutch</button>
+      <button id="germanbtn">German</button>
+      <button id="englishbtn">English</button>
+    </p>
 
     <tpa-component author='{"name": "Lord Meowser", "image": "http://lorempixel.com/g/300/200/cats/"}' fancy>
       <h2>Hello tpa-component</h2>
@@ -38,6 +46,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       document.querySelector('#laserbtn').addEventListener('click', function() {
         seedElement.fireLasers();
+      });
+
+      document.querySelector('#dutchbtn').addEventListener('click', function() {
+        seedElement.changeLanguage('nl-nl');
+      });
+
+      document.querySelector('#germanbtn').addEventListener('click', function() {
+        seedElement.changeLanguage('de-de');
+      });
+
+      document.querySelector('#englishbtn').addEventListener('click', function() {
+        seedElement.changeLanguage('en-au');
       });
 
       document.addEventListener("tpa-component-lasers", function(e) {
