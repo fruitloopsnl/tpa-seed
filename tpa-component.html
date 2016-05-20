@@ -9,8 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../polymer/polymer.html">
-
-<link rel="import" href="tpa-component-i18n.html">
+<link rel="import" href="../app-localize-behavior/app-localize-behavior.html">
 
 <!--
 An element providing a solution to no problem in particular.
@@ -31,10 +30,6 @@ Example:
 
 <dom-module id="tpa-component">
   <template>
-    <tpa-component-i18n
-      id="i18ncontent"
-      content="{{i18ncontent}}"></tpa-component-i18n>
-
     <style>
       :host {
         display: block;
@@ -54,7 +49,7 @@ Example:
     <content></content>
     <p class="author">
       <img src$="{{author.image}}">
-      {{i18ncontent.cheers}},<br/>
+      {{localize('cheers')}},<br/>
       <span class="name">{{author.name}}</span>
     </p>
   </template>
@@ -62,12 +57,23 @@ Example:
   <script>
     Polymer({
       is: 'tpa-component',
+      behaviors: [
+        Polymer.AppLocalizeBehavior
+      ],
 
       properties: {
 
-        i18ncontent: {
-          type: Object,
-          notify: true
+        language: {
+          value: 'en-au'
+        },
+        resources: {
+          value: function() {
+            return {
+              'en-au': { 'cheers': 'Cheers' },
+              'nl-nl': { 'cheers': 'Proost' },
+              'de-de': { 'cheers': 'Prost' }
+            }
+          }
         },
 
         /**
@@ -166,10 +172,7 @@ Example:
        * @return {string} The full greeting.
        */
       changeLanguage: function(a){
-        this.fire('iron-signal', {
-          name: "i18n",
-          data: a
-        });
+        this.language = a;
       }
     });
   </script>
