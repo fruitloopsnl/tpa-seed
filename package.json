@@ -6,15 +6,18 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {    
-  },
+  "dependencies": {},
   "devDependencies": {
     "drakov": "^1.0.0",
+    "express": "^4.13.4",
     "gulp": "^3.9.1",
-    "web-component-tester-istanbul": "^0.10.0"
+    "opener": "^1.4.1",
+    "polyserve": "^0.12.0",
+    "url": "^0.11.0",
+    "yargs": "^4.7.1"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "wct"
   },
   "repository": {
     "type": "git",
