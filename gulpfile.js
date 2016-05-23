@@ -5,6 +5,7 @@ var proxy = require('http-proxy-middleware');
 var express = require('express');
 var url = require('url');
 var args = require('yargs').argv;
+var opener = require('opener');
 
 var config = {    
     port  : args.port  || 5000,
@@ -54,9 +55,11 @@ gulp.task('serve', function() {
         .pipe(res);
     });
 
-    console.log('\nPolyserving : http://localhost:'+ config.port +'/components/tpa-component/index.html \n');
+    var polyserveUrl = 'http://localhost:'+ config.port +'/components/tpa-component/index.html';
+    console.log('\nPolyserving : '+ polyserveUrl +' \n');
 
-    app.listen(config.port);
+    app.listen(config.port);    
+    opener(polyserveUrl);
 });
 
 
