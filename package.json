@@ -2,7 +2,7 @@
   "name": "tpa-component",
   "version": "0.0.0",
   "description": "An element providing a starting point for your own reusable TPA elements.",
-  "main": "wct.conf.js",
+  "main": "tpa-component.html",
   "directories": {
     "test": "test"
   },
