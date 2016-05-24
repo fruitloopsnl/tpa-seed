@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ING-Group/tpa-component.svg?branch=master)](https://travis-ci.org/ING-Group/tpa-component)
+
 # tpa-component
 
 An element providing a starting point for your own reusable TPA elements.
