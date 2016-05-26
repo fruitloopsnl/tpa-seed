@@ -47,11 +47,18 @@ bower dependencies in line. You can install it via:
 
 And you can run it via:
 
-    polyserve
+    gulp
+    
+Do not run via `polyserve`, as it will not include the API mocking host
 
 Once running, you can preview your element at
 `http://localhost:8080/components/tpa-component/`, where `tpa-component` is the name of the directory containing it.
 
+### API Blueprint
+
+Hosting [API Blueprint](https://apiblueprint.org/) mocks is provided via [Drakov](https://github.com/Aconex/drakov/)
+
+The hosting of the mocks combined with `polyserve` is via [Proxy Middleware](https://github.com/chimurai/http-proxy-middleware/)
 
 ## Testing Your Element
 
@@ -68,6 +75,8 @@ Install it via:
 Then, you can run your tests on _all_ of your local browsers via:
 
     wct
+    
+Code coverage is provided by [Istanbul](https://github.com/thedeeno/web-component-tester-istanbul)
 
 #### WCT Tips
 
@@ -80,4 +89,4 @@ Then, you can run your tests on _all_ of your local browsers via:
 
 ## Yeoman support
 
-If you'd like to use Yeoman to scaffold your element that's possible. The TPA [`generator-polymer`](https://github.com/ING-Group/generator-tpa) generator has a [`tpa`](https://github.com/ING-Group/generator-tpa#tpa) subgenerator.
+If you'd like to use Yeoman to scaffold your element that's possible. The TPA [`generator-tpa`](https://github.com/ING-Group/generator-tpa) generator has a [`tpa`](https://github.com/ING-Group/generator-tpa#tpa) subgenerator.
