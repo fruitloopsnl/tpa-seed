@@ -1,8 +1,8 @@
 {
-  "name": "tpa-component",
+  "name": "tpa-seed",
   "version": "0.0.0",
   "description": "An element providing a starting point for your own reusable TPA elements.",
-  "main": "tpa-component.html",
+  "main": "tpa-seed.html",
   "directories": {
     "test": "test"
   },
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ING-Group/tpa-component.git"
+    "url": "git+https://github.com/ING-Group/tpa-seed.git"
   },
   "keywords": [
     "tpa",
@@ -31,7 +31,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ING-Group/tpa-component/issues"
+    "url": "https://github.com/ING-Group/tpa-seed/issues"
   },
-  "homepage": "https://github.com/ING-Group/tpa-component#readme"
+  "homepage": "https://github.com/ING-Group/tpa-seed#readme"
 }

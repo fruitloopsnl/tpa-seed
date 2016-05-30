@@ -1,14 +1,13 @@
-[![Build Status](https://travis-ci.org/ING-Group/tpa-component.svg?branch=master)](https://travis-ci.org/ING-Group/tpa-component)
+[![Build Status](https://travis-ci.org/ING-Group/tpa-seed.svg?branch=master)](https://travis-ci.org/ING-Group/tpa-seed)
 
-# tpa-component
+# tpa-seed
 
 An element providing a starting point for your own reusable TPA elements.
 
 
 ## Dependencies
 
-Element dependencies are managed via [Bower](http://bower.io/). You can
-install that via:
+Element dependencies are managed via [Bower](http://bower.io/). You can install that via:
 
     npm install -g bower
 
@@ -27,7 +26,7 @@ linting specificities. You can install it via:
 
 And you can run it via:
 
-	polylint -i tpa-component.html
+	polylint -i tpa-seed.html
 
 If your element contains errors, they will appear on the console.
 
@@ -52,7 +51,7 @@ And you can run it via:
 Do not run via `polyserve`, as it will not include the API mocking host
 
 Once running, you can preview your element at
-`http://localhost:8080/components/tpa-component/`, where `tpa-component` is the name of the directory containing it.
+`http://localhost:8080/components/tpa-seed/`, where `tpa-seed` is the name of the directory containing it.
 
 ### API Blueprint
 
@@ -63,20 +62,22 @@ The hosting of the mocks combined with `polyserve` is via [Proxy Middleware](htt
 ## Testing Your Element
 
 Simply navigate to the `/test` directory of your element to run its tests. If
-you are using Polyserve: `http://localhost:8080/components/tpa-component/test/`
+you are using Polyserve: `http://localhost:8080/components/tpa-seed/test/`
 
 ### web-component-tester
 
 The tests are compatible with [web-component-tester](https://github.com/Polymer/web-component-tester).
 Install it via:
 
-    npm install -g web-component-tester
+    npm install -g web-component-tester-istanbul
 
 Then, you can run your tests on _all_ of your local browsers via:
 
     wct
     
 Code coverage is provided by [Istanbul](https://github.com/thedeeno/web-component-tester-istanbul)
+
+    npm install -g web-component-tester-istanbul
 
 #### WCT Tips
 

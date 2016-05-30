@@ -12,17 +12,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-    <title>tpa-component Demo</title>
+    <title>tpa-seed Demo</title>
 
     <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
 
-    <link rel="import" href="../tpa-component.html">
+    <link rel="import" href="../tpa-seed.html">
     <link rel="import" href="../../tpa-icons/tpa-icons.html">
     <link rel="import" href="../../tpa-styles/app-theme.html">
   </head>
   <body unresolved>
 
-    <p>An example of <code>&lt;tpa-component&gt;</code>:</p>
+    <p>An example of <code>&lt;tpa-seed&gt;</code>:</p>
 
     <p>Make words! <button id="saybtn">Say Something</button></p>
     <p>Make lasers! <button id="laserbtn">Fire lasers</button></p>
@@ -33,12 +33,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <button id="englishbtn">English</button>
     </p>
 
-    <tpa-component author='{"name": "Lord Meowser", "image": "http://lorempixel.com/g/300/200/cats/"}' fancy>
-      <h2>Hello tpa-component</h2>
-    </tpa-component>
+    <tpa-seed author='{"name": "Lord Meowser", "image": "http://lorempixel.com/g/300/200/cats/"}' fancy>
+      <h2>Hello tpa-seed</h2>
+    </tpa-seed>
 
     <script>
-      var seedElement = document.querySelector('tpa-component');
+      var seedElement = document.querySelector('tpa-seed');
 
       document.querySelector('#saybtn').addEventListener('click', function() {
         alert(seedElement.sayHello('Hallo!'));
@@ -60,7 +60,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         seedElement.changeLanguage('en-au');
       });
 
-      document.addEventListener("tpa-component-lasers", function(e) {
+      document.addEventListener("tpa-seed-lasers", function(e) {
         console.log(e.detail.sound);
       });
 

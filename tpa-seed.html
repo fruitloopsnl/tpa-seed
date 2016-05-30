@@ -10,20 +10,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../polymer/polymer.html">
 
-<link rel="import" href="tpa-component-i18n.html">
+<link rel="import" href="tpa-seed-i18n.html">
 
 <!--
 An element providing a solution to no problem in particular.
 
 Example:
 
-    <tpa-component></tpa-component>
+    <tpa-seed></tpa-seed>
 
 Example:
 
-    <tpa-component>
-      <h2>Hello tpa-component</h2>
-    </tpa-component>
+    <tpa-seed>
+      <h2>Hello tpa-seed</h2>
+    </tpa-seed>
 
 Please follow the [guide](https://www.polymer-project.org/1.0/docs/tools/documentation) when writing the documentation.
 
@@ -31,11 +31,11 @@ Please follow the [guide](https://www.polymer-project.org/1.0/docs/tools/documen
 @hero hero.svg
 -->
 
-<dom-module id="tpa-component">
+<dom-module id="tpa-seed">
   <template>
-    <tpa-component-i18n
+    <tpa-seed-i18n
       id="i18ncontent"
-      content="{{i18ncontent}}"></tpa-component-i18n>
+      content="{{i18ncontent}}"></tpa-seed-i18n>
 
     <style>
       :host {
@@ -52,7 +52,7 @@ Please follow the [guide](https://www.polymer-project.org/1.0/docs/tools/documen
       }
     </style>
 
-    <h1>&lt;tpa-component&gt;</h1>
+    <h1>&lt;tpa-seed&gt;</h1>
     <content></content>
     <p class="author">
       <img src$="{{author.image}}">
@@ -63,7 +63,7 @@ Please follow the [guide](https://www.polymer-project.org/1.0/docs/tools/documen
 
   <script>
     Polymer({
-      is: 'tpa-component',
+      is: 'tpa-seed',
 
       properties: {
 
@@ -141,13 +141,13 @@ Please follow the [guide](https://www.polymer-project.org/1.0/docs/tools/documen
        */
       sayHello: function (greeting) {
         var response = greeting || 'Hello World!';
-        return 'tpa-component says, ' + response;
+        return 'tpa-seed says, ' + response;
       },
 
       /**
-       * The `tpa-component-lasers` event is fired whenever `fireLasers` is called.
+       * The `tpa-seed-lasers` event is fired whenever `fireLasers` is called.
        *
-       * @event tpa-component-lasers
+       * @event tpa-seed-lasers
        * @detail {{sound: String}}
        */
 
@@ -158,7 +158,7 @@ Please follow the [guide](https://www.polymer-project.org/1.0/docs/tools/documen
        * do the zapping.
        */
       fireLasers: function () {
-        this.fire('tpa-component-lasers', {sound: 'Pew pew!'});
+        this.fire('tpa-seed-lasers', {sound: 'Pew pew!'});
       },
 
       /**
