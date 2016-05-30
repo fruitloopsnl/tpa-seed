@@ -55,7 +55,7 @@ gulp.task('serve', function() {
         .pipe(res);
     });
 
-    var polyserveUrl = 'http://localhost:'+ config.port +'/components/tpa-component/index.html';
+    var polyserveUrl = 'http://localhost:'+ config.port +'/components/tpa-seed/index.html';
     console.log('\nPolyserving : '+ polyserveUrl +' \n');
 
     app.listen(config.port);    

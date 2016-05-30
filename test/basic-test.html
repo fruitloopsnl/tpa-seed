@@ -17,27 +17,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <script src="../../web-component-tester/browser.js"></script>
 
     <!-- Step 1: import the element to test -->
-    <link rel="import" href="../tpa-component.html">
+    <link rel="import" href="../tpa-seed.html">
     <link rel="import" href="../../tpa-icons/tpa-icons.html">
   </head>
   <body>
 
     <!-- You can use the document as a place to set up your fixtures. -->
-    <test-fixture id="tpa-component-fixture">
+    <test-fixture id="tpa-seed-fixture">
       <template>
-        <tpa-component>
-          <h2>tpa-component</h2>
-        </tpa-component>
+        <tpa-seed>
+          <h2>tpa-seed</h2>
+        </tpa-seed>
       </template>
     </test-fixture>
 
     <script>
-      suite('<tpa-component>', function() {
+      suite('<tpa-seed>', function() {
 
         var myEl;
 
         setup(function() {
-          myEl = fixture('tpa-component-fixture');
+          myEl = fixture('tpa-seed-fixture');
         });
 
         test('defines the "author" property', function() {
@@ -46,14 +46,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         });
 
         test('says hello', function() {
-          assert.equal(myEl.sayHello(), 'tpa-component says, Hello World!');
+          assert.equal(myEl.sayHello(), 'tpa-seed says, Hello World!');
 
           var greetings = myEl.sayHello('greetings Earthlings');
-          assert.equal(greetings, 'tpa-component says, greetings Earthlings');
+          assert.equal(greetings, 'tpa-seed says, greetings Earthlings');
         });
 
         test('fires lasers', function(done) {
-          myEl.addEventListener('tpa-component-lasers', function(event) {
+          myEl.addEventListener('tpa-seed-lasers', function(event) {
             assert.equal(event.detail.sound, 'Pew pew!');
             done();
           });

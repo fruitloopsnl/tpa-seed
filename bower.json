@@ -1,5 +1,5 @@
 {
-  "name": "tpa-component",
+  "name": "tpa-seed",
   "version": "1.0.0",
   "authors": [
     "Anonymous <anonymous@example.com>"
@@ -10,9 +10,9 @@
     "polymer",
     "seed"
   ],
-  "main": "tpa-component.html",
+  "main": "tpa-seed.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/ING-Group/tpa-component/",
+  "homepage": "https://github.com/ING-Group/tpa-seed/",
   "ignore": [
     "/.*",
     "/test/"
