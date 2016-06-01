@@ -4,6 +4,29 @@
 
 An element providing a starting point for your own reusable TPA elements.
 
+## Getting Started For Quickly
+
+Recommended for experienced developers only.
+
+Install global dependencies
+
+    npm install -g bower polylint polyserve web-component-tester web-component-tester-istanbul
+
+Install local dependencies
+
+    npm run deps
+    
+Host component with API mocks
+
+    npm run serve
+    
+Run the unit tests
+
+    npm run test
+
+
+## Getting Started
+
 
 ## Dependencies
 
@@ -18,23 +41,30 @@ Then, go ahead and download the element's dependencies:
 
 ## Linting Your Element
 
-If you wish to lint your element, we recommend that you use
-[Polylint](https://github.com/PolymerLabs/polylint) to take into account Polymer 
-linting specificities. You can install it via:
+If you wish to lint your element, we recommend that you use [Polylint](https://github.com/PolymerLabs/polylint) to take into account Polymer 
+linting specificities. 
+
+You can install it via:
 
     npm install -g polylint
 
 And you can run it via:
 
 	polylint -i tpa-seed.html
+    
+or 
+
+    polylint
+
+If your `bower.json` file has `main` pointed to your component
+
+    "main": "tpa-seed.html",
 
 If your element contains errors, they will appear on the console.
 
-Note that it is possible to use `Polylint` with Atom and Sublime with the appropriate package/plugin.
+Note: that it is possible to use `Polylint` with Atom and Sublime with the appropriate package/plugin.
 
-For more options regarding `polylint`, please refer to the 
-[documentation](https://github.com/PolymerLabs/polylint#polylint).
-
+For more options regarding `polylint`, please refer to the [documentation](https://github.com/PolymerLabs/polylint#polylint).
 
 ## Playing With Your Element
 
@@ -46,9 +76,9 @@ bower dependencies in line. You can install it via:
 
 And you can run it via:
 
-    gulp
+    npm run serve
     
-Do not run via `polyserve`, as it will not include the API mocking host
+Do not run via `polyserve` if you depend on the API mocking host
 
 Once running, you can preview your element at
 `http://localhost:8080/components/tpa-seed/`, where `tpa-seed` is the name of the directory containing it.
@@ -64,20 +94,23 @@ The hosting of the mocks combined with `polyserve` is via [Proxy Middleware](htt
 Simply navigate to the `/test` directory of your element to run its tests. If
 you are using Polyserve: `http://localhost:8080/components/tpa-seed/test/`
 
-### web-component-tester
+### Unit Testing
 
 The tests are compatible with [web-component-tester](https://github.com/Polymer/web-component-tester).
-Install it via:
 
-    npm install -g web-component-tester
-
-Then, you can run your tests on _all_ of your local browsers via:
-
-    wct
-    
 Code coverage is provided by [Istanbul](https://github.com/thedeeno/web-component-tester-istanbul)
 
-    npm install -g web-component-tester-istanbul
+Install them via:
+
+    npm install -g web-component-tester web-component-tester-istanbul
+    
+Then, you can run your tests on _all_ of your local browsers via:
+
+    npm run test
+
+or
+
+    wct
 
 #### WCT Tips
 
