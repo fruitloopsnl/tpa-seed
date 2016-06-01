@@ -4,6 +4,29 @@
 
 An element providing a starting point for your own reusable TPA elements.
 
+## Getting Started For Quickly
+
+Recommended for experienced developers only.
+
+Install global dependencies
+
+    npm install -g bower polylint polyserve web-component-tester web-component-tester-istanbul
+
+Install local dependencies
+
+    npm run deps
+    
+Host component with API mocks
+
+    npm run serve
+    
+Run the unit tests
+
+    npm run test
+
+
+## Getting Started
+
 
 ## Dependencies
 
@@ -18,23 +41,30 @@ Then, go ahead and download the element's dependencies:
 
 ## Linting Your Element
 
-If you wish to lint your element, we recommend that you use
-[Polylint](https://github.com/PolymerLabs/polylint) to take into account Polymer 
-linting specificities. You can install it via:
+If you wish to lint your element, we recommend that you use [Polylint](https://github.com/PolymerLabs/polylint) to take into account Polymer 
+linting specificities. 
+
+You can install it via:
 
     npm install -g polylint
 
 And you can run it via:
 
 	polylint -i tpa-seed.html
+    
+or 
+
+    polylint
+
+If your `bower.json` file has `main` pointed to your component
+
+    "main": "tpa-seed.html",
 
 If your element contains errors, they will appear on the console.
 
-Note that it is possible to use `Polylint` with Atom and Sublime with the appropriate package/plugin.
+Note: that it is possible to use `Polylint` with Atom and Sublime with the appropriate package/plugin.
 
-For more options regarding `polylint`, please refer to the 
-[documentation](https://github.com/PolymerLabs/polylint#polylint).
-
+For more options regarding `polylint`, please refer to the [documentation](https://github.com/PolymerLabs/polylint#polylint).
 
 ## Playing With Your Element
 
@@ -46,7 +76,7 @@ bower dependencies in line. You can install it via:
 
 And you can run it via:
 
-    gulp
+    npm run serve
     
 Do not run via `polyserve`, as it will not include the API mocking host
 
