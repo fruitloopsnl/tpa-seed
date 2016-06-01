@@ -69,7 +69,7 @@ you are using Polyserve: `http://localhost:8080/components/tpa-seed/test/`
 The tests are compatible with [web-component-tester](https://github.com/Polymer/web-component-tester).
 Install it via:
 
-    npm install -g web-component-tester-istanbul
+    npm install -g web-component-tester
 
 Then, you can run your tests on _all_ of your local browsers via:
 
