@@ -6,6 +6,7 @@ var express = require('express');
 var url = require('url');
 var args = require('yargs').argv;
 var opener = require('opener');
+var lec = require('gulp-line-ending-corrector');
 
 var config = {    
     port  : args.port  || 5000,
@@ -62,5 +63,10 @@ gulp.task('serve', function() {
     opener(polyserveUrl);
 });
 
+gulp.task('fix-api-eol', function() {
+  return gulp.src('./bower_components/**/*-mock.md')
+    .pipe(lec({verbose:true, eolc: 'LF', encoding:'utf8'}))
+    .pipe(gulp.dest('./bower_components'));
+});
 
 gulp.task('default', ['serve']);
